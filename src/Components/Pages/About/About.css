@@ -1,0 +1,329 @@
+.abt-first-cont{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    object-fit: fill;
+}
+.abt-first-cont p.title{
+    font-weight: 400;
+    font-size: 65px;
+    color: #fff;
+    text-shadow: 0 2px 2px black;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    text-transform: uppercase;
+}
+
+.breadcrumbs{
+    height: fit-content;
+    word-spacing: 5px;
+}
+.breadcrumbs p,
+.breadcrumbs .abt-link{
+    font-size: larger;
+    font-weight: 500;
+    text-transform: uppercase;  
+    color: grey;
+    transition: all .3s ;
+}
+.breadcrumbs .abt-link:hover{
+    color: var(--mainColor);
+}
+.breadcrumbs p span{
+    color: #fff;
+}
+
+.secondo-Anon{
+    display: flex;
+    height: fit-content;
+    gap: 5vw;
+    padding: 0 15vw;
+    margin-bottom: 15vh;
+}
+.secondo-Anon .secondo-sect:last-child{
+    width: 60%;
+    line-height: .7;
+    margin: auto 0;
+    margin: auto;
+}
+.secondo-sect:last-child p:first-child{
+    font-size: 2vw;
+    color: var(--secColor);
+    font-family: 'Courgette', cursive;
+}
+.secondo-sect:last-child p:nth-child(2){
+    font-size: 4vw;
+    font-weight: 400;
+    margin-bottom: 5vh;
+    text-transform: uppercase;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    color: black;
+}
+.secondo-Anon .secondo-sect:last-child p.short-inf{
+    line-height: 1.5;
+}
+
+.secondo-Anon .secondo-sect:first-child{
+    width: 40%;
+    height: 60vh;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    overflow: hidden;
+}
+.secondo-Anon .secondo-sect:first-child:hover img{
+    scale: 1.1;
+}
+.secondo-sect:first-child img{
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-out;
+}
+
+
+
+.parallax2-about{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 65px;
+    color: #fff;
+    text-shadow: 0 2px 2px black;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    text-transform: uppercase;   
+}
+.abt-story{
+    width: 100%;
+    text-align: center;
+    background: #eee;
+    padding: 8vh 14vw;
+}
+.abt-story .story-title,
+.chefs p.title{
+    text-align: center;
+    font-size: 4vw;
+    color: var(--secColor);
+    font-family: 'Courgette', cursive;   
+}
+.abt-story .story-box p{
+    font-size: large;
+    color: black;
+    font-weight: 500;
+}
+
+.chefs{
+    margin-top: 10vh;
+}
+.About .chef-sect-cont{
+    padding: 0 7vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    height: 80vh;
+}
+.About .chef-sect-cont .chefs-sect{
+    width: 100%;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 100%;
+    border: 2px solid var(--mainColor);
+    text-align: center;
+}
+.About .chef-sect-cont .chefs-sect img{
+    width: 100%;
+    height: 65%;
+}
+
+.chefs-sect p.name{
+    margin-top: 1vh;
+    font-size: larger;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+}
+.chef-icon{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    gap: 2vw;
+}
+.chef-icon .chef-ico{
+    height: 100%;
+    border: 1px solid var(--mainColor); 
+    width: 3vw;
+    padding: .8vh .5vw;
+    transition: all .3s;
+    color: var(--mainColor);
+}
+.chef-icon .chef-ico:hover {
+    color: #fff;
+    background: var(--mainColor);
+}
+
+
+
+
+
+@media screen  and (max-width: 600px){
+    .abt-first-cont p.title{
+        font-size: 45px;
+    }
+    .breadcrumbs p,
+    .breadcrumbs .abt-link{
+        font-size: medium;
+    }
+    
+    .secondo-Anon{
+        padding: 0 7vw;
+        margin-bottom: 7vh;
+    }
+    .secondo-Anon .secondo-sect:first-child{
+        height: 30vh;
+    }
+    .secondo-Anon .secondo-sect:last-child{
+        line-height: .7;
+    }
+    .secondo-sect:last-child p:first-child{
+        font-size: 4vw;
+    }
+    .secondo-sect:last-child p:nth-child(2){
+        font-size: 7vw;
+        margin-bottom: 3vh;
+    }
+    .secondo-sect:last-child p:last-child{
+        font-size: small;
+        color: black;
+    }
+    
+    .parallax2-about{
+        height: 40vh;
+        font-size: xx-large;
+    }
+    .abt-story{
+        margin-top: 0;
+        padding: 10vh 7vw;
+    }
+    .abt-story .story-title,
+    .chefs p.title{
+        font-size: 7vw;
+    }
+    .abt-story .story-box p{
+        font-size: medium;
+    }
+    
+    .chefs{
+        margin-top: 5vh;
+    }
+    .About .chef-sect-cont{
+        padding: 0 7vw;
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    .About .chef-sect-cont .chefs-sect{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 50vh;
+    }
+
+    .About .chef-sect-cont .chefs-sect img{
+        height: 65%;
+    }
+    
+    .chefs-sect p.name{
+        font-size: medium;
+    }
+    .chefs-sect .chef-inf{
+        font-size: smaller;
+        margin-bottom:  3px;
+    }
+
+    .chef-icon .chef-ico{
+        width: 8vw;
+        margin: 0;
+        padding: .5vh 1vw;
+    }
+}
+
+@media screen and (min-width:600px)  and (max-width: 900px){
+    .abt-first-cont{
+        height: 100vh;
+    }
+    .secondo-Anon{
+        padding: 0 7vw;
+    }
+    .secondo-Anon .secondo-sect:first-child{
+        height: 30vh;
+    }
+
+    .secondo-sect:last-child p:first-child{
+        font-size: 5vw;
+    }
+    .secondo-sect:last-child p:nth-child(2){
+        font-size: 7vw;
+        margin-bottom: 2vh;
+    }
+    .secondo-sect:last-child p:last-child{
+        font-size: larger;
+        color: black;
+    }
+    
+    .parallax2-about{
+        height: 30vh;
+        font-size: 50px;
+    }
+    .abt-story{
+        margin-top: 0;
+        padding: 8vh 7vw;
+    }
+    .abt-story .story-title,
+    .chefs p.title{
+        font-size: 7vw;
+    }
+    .abt-story .story-box p{
+        font-size: large;
+    }
+    
+    .chefs{
+        margin-top: 5vh;
+    }
+    .About .chef-sect-cont{
+        padding: 0 3vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: fit-content;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .About .chef-sect-cont .chefs-sect{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 15px;
+        height: 50vh;
+    }
+
+    .About .chef-sect-cont .chefs-sect img{
+        height: 65%;
+    }
+    
+    .chefs-sect p.name{
+        font-size: larger;
+    }
+    .chefs-sect .chef-inf{
+        font-size: large;
+        margin-bottom:  3px;
+    }
+
+    .chef-icon .chef-ico{
+        width: 8vw;
+        margin: 0;
+        padding: .5vh 1vw;
+    }
+}
